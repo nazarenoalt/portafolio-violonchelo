@@ -1,0 +1,288 @@
+* {
+  --azul: #27A6A8;
+  --amarillo:  #EBB836;
+  --gris: #242424;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  padding: 0;
+  margin: 0;
+}
+header
+{
+  display:flex;
+  padding-left: 100px;
+  padding-top: 100px;
+
+}
+
+header .icon-social {
+  width: 15%;
+  margin-right: 5%;
+}
+ #youtube, #instagram {
+  max-width: 100%;
+  max-height: 100%;
+}
+h1, h2, h3, h4, h5, h6
+{
+  font-family: 'Commissioner', sans-serif;
+  font-weight: 700;
+  margin: auto;
+  color: var(--gris);
+}
+
+h1
+{
+  font-size: 6rem;
+  font-weight: 700;
+  margin: 0;
+  color: var(--gris);
+}
+h2 {
+  font-size: 4.5rem;
+}
+a
+{
+  color: #EBB836;
+  font-size: 1.7rem;
+}
+strong {
+  font-size: 1.7rem;
+}
+body {
+  margin: 0;
+  width: 100%;
+  background-image: url("../images/portada.jpg");
+  background-size: 110%;
+  background-repeat: no-repeat;
+  background-color: var(--gris);
+ font-family: 'Commissioner', sans-serif;
+ font-size: 2rem;
+ color: var(--gris)
+}
+
+.main-section
+{
+  margin:auto;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 90%;
+  margin-top: 70%;
+
+
+}
+.quienSoy-article
+{
+  padding: 30px 30px 30px 30px;
+  width: 100%;
+  height: auto;
+  background-color:var(--amarillo);
+  margin:auto;
+  text-align:center;
+  font-size: 3.5rem;
+  box-shadow: 0px 10px 50px rgba(0,0,0,0.5);
+}
+.musica-article
+{
+  padding: 30px 30px 30px 30px;
+  max-width:50%;
+  height: 560px;
+  background-color:var(--azul);
+  margin: auto;
+  margin-top: 60px;
+  margin-left: 0px;
+  text-align: left;
+  font-size: 3rem;
+  overflow: hidden;
+  box-shadow: 0px 10px 50px rgba(0,0,0,0.7);
+}
+.musica-article h2
+{
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.musica-fig
+{
+  max-width: 45%;
+  max-height: 560px;
+  overflow: hidden;
+  margin-top: 60px;
+
+    box-shadow: 0px 10px 50px rgba(0,0,0,0.7);
+
+
+}
+.musica-img
+{
+  max-width: 800px;
+  object-fit: cover;
+}
+
+.trayectoria
+{
+  display:flex;
+  flex-direction: column;
+  padding: 30px 30px 30px 30px;
+  width: 100%;
+  height: auto;
+  background-color:var(--amarillo);
+  margin-top: 60px;
+  text-align: left;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.trayectoria h2
+{
+  margin: auto;
+  text-align: center;
+}
+
+.trayectoria div
+{
+  display: flex;
+  flex-direction: row;
+}
+.trayectoria p
+{
+    font-size: 18px;
+    width: 50%;
+    padding-right: 20px;
+}
+.trayectoria a {
+  color: var(--gris);
+}
+
+.contenido
+{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0px 30px 30px 30px;
+  max-width: 100%;
+  background-color: var(--azul);
+  margin:auto;
+  text-align: left;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contenido-box
+{
+  max-width: 45%;
+  height: auto;
+  background-color: var(--gris);
+  border-radius:10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  margin-top: 30px;
+  color: white;
+  overflow: hidden;
+      box-shadow: 0px 10px 50px rgba(0,0,0,0.7);
+}
+.contenido-box figure
+{
+  width:100%;
+  height: auto;
+  margin: auto;
+  overflow: hidden;
+}
+
+.contenido-box figure img
+{
+  width: 100%;
+}
+.contenido-box-desc
+{
+  margin-top: -100px;
+  margin-bottom: 50px;
+  width: 80%;
+  background-color: var(--amarillo);
+  padding: 10px;
+  word-wrap: break-word;
+}
+.contenido-box-desc h2
+{
+  font-size: 3rem;
+}
+.contenido-box-desc p, .contenido-box-desc strong
+{
+  font-size: 2rem;
+}
+
+footer
+{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 30px 30px 30px 30px;
+  width: 100%;
+  background-color:var(--azul);
+  margin:auto;
+  margin-top: 60px;
+  text-align: left;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer p {
+  width: 60%;
+  font-size: 1.5rem;
+}
+footer div {
+  display: flex;
+  width: 40%;
+  justify-content: center;
+}
+footer div .icon-footer-social {
+  width: 30%;
+  height: 30%;
+}
+footer div .icon-footer-social img {
+ width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+  header {
+    padding-left: 0.5rem;
+    padding-top: 0.5rem;
+  }
+  header img {
+
+  }
+}
+
+@media screen and (max-width:767px) {
+  .musica-article {
+    order: 2;
+    max-width: 100%;
+  }
+  .musica-fig {
+    order: 1;
+    max-width: 100%;
+  }
+
+  .contenido-box {
+    max-width: 85%;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  header .icon-social {
+    width: 20%;
+    margin-right: 5%;
+  }
+  .contenido-box {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 319px) {
+
+}
