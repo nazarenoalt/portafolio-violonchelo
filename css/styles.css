@@ -111,13 +111,14 @@ body {
   max-height: 560px;
   overflow: hidden;
   margin-top: 60px;
-
-    box-shadow: 0px 10px 50px rgba(0,0,0,0.7);
+  box-shadow: 0px 10px 50px rgba(0,0,0,0.7);
 
 
 }
 .musica-img
 {
+  position: relative;
+  right: 20%;
   max-width: 800px;
   object-fit: cover;
 }
@@ -200,7 +201,7 @@ body {
 }
 .contenido-box-desc
 {
-  margin-top: -100px;
+  margin-top: -15%;
   margin-bottom: 50px;
   width: 80%;
   background-color: var(--amarillo);
@@ -221,10 +222,11 @@ footer
   display:flex;
   flex-direction: row;
   flex-wrap: wrap;
-  padding: 30px 30px 30px 30px;
+  padding: 1rem;
   width: 100%;
   background-color:var(--azul);
   margin:auto;
+
   margin-top: 60px;
   text-align: left;
   justify-content: space-between;
@@ -241,8 +243,9 @@ footer div {
   justify-content: center;
 }
 footer div .icon-footer-social {
-  width: 30%;
-  height: 30%;
+  width: 25%;
+  height: 25%;
+  padding-right: 7%;
 }
 footer div .icon-footer-social img {
  width: 100%;
@@ -253,8 +256,14 @@ footer div .icon-footer-social img {
     padding-left: 0.5rem;
     padding-top: 0.5rem;
   }
-  header img {
-
+  .musica-img
+  {
+    right: 100%;
+  }
+  footer div .icon-footer-social {
+    width: 30%;
+    height: 30%;
+    padding-right: 7%;
   }
 }
 
@@ -267,22 +276,65 @@ footer div .icon-footer-social img {
     order: 1;
     max-width: 100%;
   }
+  .musica-img
+  {
+    right: 15%;
+  }
 
   .contenido-box {
     max-width: 85%;
   }
+
+  footer div .icon-footer-social {
+    width: 35%;
+    height: 35%;
+    padding-right: 7%;
+  }
 }
 
+@media screen and (max-width:570px)
+{
+  .musica-img
+  {
+    right: 50%;
+  }
+}
 @media screen and (max-width: 479px) {
+  p {
+    font-size: 2.5rem;
+  }
+  h1 {
+    font-size: 5rem;
+  }
+  h2 {
+    font-size: 3.5rem;
+  }
+
   header .icon-social {
     width: 20%;
     margin-right: 5%;
   }
+  .musica-img
+  {
+    right: 75%;
+  }
   .contenido-box {
     max-width: 100%;
   }
-}
-
-@media screen and (max-width: 319px) {
-
+  .contenido-box-desc {
+    margin-bottom: 30px;
+  }
+  .contenido-box-desc h2
+  {
+    font-size: 2rem;
+  }
+  .contenido-box-desc p, .contenido-box-desc strong
+  {
+    font-size: 1.7rem;
+  }
+  footer div .icon-footer-social {
+    width: 50%;
+    height: 50%;
+    padding-right: 7%;
+  }
 }
